@@ -1,0 +1,47 @@
+Soru 1
+
+CREATE TABLE employee (
+	id INTEGER,
+	name VARCHAR(50),
+	birthday DATE,
+	email VARCHAR(100)
+
+);
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Soru 2
+
+insert into employee (id, name, birthday, email) values (1, 'Shir Danbrook', '2023-06-24', 'sdanbrook0@prnewswire.com');
+insert into employee (id, name, birthday, email) values (2, 'Saleem Gallie', '2023-05-01', 'sgallie1@abc.net.au');
+insert into employee (id, name, birthday, email) values (3, 'Vinnie Leming', '2023-05-17', 'vleming2@omniture.com');
+insert into employee (id, name, birthday, email) values (4, 'Pamela Robotham', '2023-11-17', 'probotham3@rediff.com');
+insert into employee (id, name, birthday, email) values (5, 'Goober Crumb', '2023-09-15', 'gcrumb4@g.co');
+insert into employee (id, name, birthday, email) values (6, 'Devan Retter', '2023-07-18', 'dretter5@engadget.com');
+insert into employee (id, name, birthday, email) values (7, 'Darin Boggs', '2023-08-21', 'dboggs6@t.co');
+insert into employee (id, name, birthday, email) values (8, 'Renaldo Tabourin', '2023-08-20', 'rtabourin7@icio.us');
+insert into employee (id, name, birthday, email) values (9, 'Kaela Ormshaw', '2024-03-21', 'kormshaw8@newyorker.com');
+insert into employee (id, name, birthday, email) values (10, 'Meredithe Antonazzi', '2024-01-15', 'mantonazzi9@unblog.fr');
+insert into employee (id, name, birthday, email) values (11, 'Cristina Rhodus', '2023-04-25', 'crhodusa@amazon.com');
+insert into employee (id, name, birthday, email) values (12, 'Kinnie Quarmby', '2024-01-18', 'kquarmbyb@opensource.org');
+insert into employee (id, name, birthday, email) values (13, 'Armin Mortel', '2023-10-12', 'amortelc@examiner.com');
+.
+.
+.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Soru 3
+
+UPDATE employee
+SET name = 'UPDATED'
+WHERE name LIKE 'S%'
+RETURNING *;
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Soru 4
+
+DELETE FROM employee
+WHERE name = 'UPDATED'
+RETURNING *;
