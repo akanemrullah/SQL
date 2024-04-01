@@ -1,2 +1,1 @@
-# SQL
-Odev8
+# SQL Odevler
